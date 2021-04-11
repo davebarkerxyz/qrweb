@@ -11,13 +11,13 @@
         }
 
         body {
-            font-size: 14px;
+            font-size: 16px;
             font-family: sans-serif;
         }
 
         .main {
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
             text-align: center;
             margin: 1em auto;
         }
@@ -38,9 +38,12 @@
             margin-bottom: 1em;
         }
 
+        #qrcanvas canvas {
+            width: 100%;
+        }
+
         #download {
-            color: #ff3030;
-            text-decoration: underline;
+            color: #1758ea;
         }
 
         #download:hover {
@@ -58,9 +61,9 @@
 <body>
 <div class="main">
     <h1>qrweb</h1>
-    <input type="text" name="qrtext" id="qrtext" value="">
+    <input type="text" name="qrtext" id="qrtext" value="" placeholder="Enter URL or text here">
     <div id="qrcanvas"></div>
-    <a id="download">Download</a>
+    <a id="download">&#128229; Download</a>
     <div class="attrib">Built with QR code generator library from <a href="https://github.com/kozakdenys/qr-code-styling">kozakdenys/qr-code-styling</a>.
 
     <script type="text/javascript">
